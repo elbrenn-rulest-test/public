@@ -23,6 +23,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: print
+        run: echo "1"
       - name: Set env as secret
         env:
           MY_VAL: ${{ secrets.SUPER_SECRET }}
